@@ -25,3 +25,6 @@ Gtk-Message: 11:39:51.544: Failed to load module "canberra-gtk-module"
 (node:95) Electron: Loading non-context-aware native module in renderer: '/app/share/atom/resources/app.asar.unpacked/node_modules/spellchecker/build/Release/spellchecker.node'. This is deprecated, see https://github.com/electron/electron/issues/18397.
 (node:95) Electron: Loading non-context-aware native module in renderer: '/app/share/atom/resources/app.asar.unpacked/node_modules/@atom/nsfw/build/Release/nsfw.node'. This is deprecated, see https://github.com/electron/electron/issues/18397.
 (node:95) Electron: Loading non-context-aware native module in renderer: '/app/share/atom/resources/app.asar.unpacked/node_modules/git-utils/build/Release/git.node'. This is deprecated, see https://github.com/electron/electron/issues/18397.
+Attempting to call a function in a renderer window that has been closed or released.
+Function provided here: worker.js:79:22
+Remote event names: crashed, destroyed
