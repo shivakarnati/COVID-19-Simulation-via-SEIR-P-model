@@ -1,0 +1,55 @@
+'context-menu':
+  'atom-text-editor[data-grammar="source julia"]': [
+    {type: 'separator'}
+    {
+      label: 'Juno',
+      submenu: [
+        {label: 'Run Block', command: 'julia-client:run-block'}
+        {label: 'Select Block', command: 'julia-client:select-block'}
+        {type: 'separator'}
+        {label: 'Go to Definition', command: 'julia-client:goto-symbol'}
+        {label: 'Show Documentation', command: 'julia-client:show-documentation'}
+        {label: 'Format Code', command: 'julia-client:format-code'}
+        {type: 'separator'}
+        {label: 'Debug: Run Block', command: 'julia-debug:run-block'}
+        {label: 'Debug: Step through Block', command: 'julia-debug:step-through-block'}
+        {label: 'Toggle Breakpoint', command: 'julia-debug:toggle-breakpoint'}
+        {label: 'Toggle Conditional Breakpoint', command: 'julia-debug:toggle-conditional-breakpoint'}
+        {type: 'separator'}
+        {label: 'Work in Current Folder', command: 'julia-client:work-in-current-folder'}
+        {label: 'Activate Environment in Current Folder', command: 'julia-client:activate-environment-in-current-folder'}
+        {label: 'Activate Environment in Parent Folder', command: 'julia-client:activate-environment-in-parent-folder'}
+        {label: 'Set Working Environment', command: 'julia-client:set-working-environment'}
+        {label: 'Set Working Module', command: 'julia-client:set-working-module'}
+      ]
+    }
+    {type: 'separator'}
+  ]
+
+  '.tree-view li.directory': [
+    {type: 'separator'}
+    {
+      label: 'Juno',
+      submenu: [
+        { label: 'Work in Folder', command: 'julia-client:work-in-current-folder' }
+        { label: 'Activate Environment in Folder', command: 'julia-client:activate-environment-in-current-folder' }
+        { label: 'Activate Environment in Parent Folder', command: 'julia-client:activate-environment-in-parent-folder' }
+        { label: 'Add Package Folder...', command: 'julia:open-package-as-project-folder' }
+        { label: 'New Terminal from Folder', command: 'julia-client:new-terminal-from-current-folder' }
+      ]
+    }
+    {type: 'separator'}
+  ]
+
+  '.tree-view li.file': [
+    {type: 'separator'}
+    {
+      label: 'Juno',
+      submenu: [
+        { label: 'Run All', command: 'julia-client:run-all' }
+        { label: 'Debug: Run File', command: 'julia-debug:run-file' }
+        { label: 'Debug: Step through File', command: 'julia-debug:step-through-file' }
+      ]
+    }
+    {type: 'separator'}
+  ]

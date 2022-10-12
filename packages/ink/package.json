@@ -1,0 +1,86 @@
+{
+  "_from": "https://www.atom.io/api/packages/ink/versions/0.12.6/tarball",
+  "_id": "ink@0.12.6",
+  "_inBundle": false,
+  "_integrity": "sha512-T4Y2hZR3QeGApyIVFTLBnJLj8Frz+ako72B8ISTzGjzvwEesURx4z1RhPNjIcFyNgBut0Apmq3fdPhayp96ABQ==",
+  "_location": "/ink",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/ink/versions/0.12.6/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/ink/versions/0.12.6/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/ink/versions/0.12.6/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/ink/versions/0.12.6/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/ink/versions/0.12.6/tarball",
+  "_shasum": "3c2b10e738ef4ada7062a97db1c1cc34a568634b",
+  "_spec": "https://www.atom.io/api/packages/ink/versions/0.12.6/tarball",
+  "_where": "/var/tmp/apm-install-dir-2022712-535-y2n5qp.6emp",
+  "bugs": {
+    "url": "https://github.com/JunoLab/atom-ink/issues"
+  },
+  "bundleDependencies": false,
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    },
+    "ftp-remote.openFile": {
+      "versions": {
+        "0.1.0": "consumeRemoteFileOpener"
+      }
+    }
+  },
+  "dependencies": {
+    "ansi_up": "^3.0.0",
+    "chroma-js": "^1.3.7",
+    "element-resize-detector": "^1.1.13",
+    "etch": "^0.14",
+    "fs-extra": "^5.0.0",
+    "fuzzaldrin-plus": "^0.1.0",
+    "katex": "0.11.0",
+    "marked": "^0.8.2",
+    "replace-in-file": "^3.0.0",
+    "underscore-plus": "^1.6.6",
+    "xterm": "4.6.0",
+    "xterm-addon-fit": "^0.4.0",
+    "xterm-addon-search": "^0.7.0",
+    "xterm-addon-unicode11": "^0.2.0",
+    "xterm-addon-web-links": "^0.4.0",
+    "xterm-addon-webgl": "^0.7.0"
+  },
+  "deprecated": false,
+  "description": "A toolkit for building IDEs in Atom",
+  "engines": {
+    "atom": ">=1.39.0 <2.0.0"
+  },
+  "homepage": "https://github.com/JunoLab/atom-ink#readme",
+  "keywords": [
+    "julia",
+    "Juno",
+    "IDE"
+  ],
+  "license": "MIT",
+  "main": "./lib/ink",
+  "name": "ink",
+  "providedServices": {
+    "ink": {
+      "versions": {
+        "0.1.0": "provide"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JunoLab/atom-ink.git"
+  },
+  "scripts": {
+    "postinstall": "node scripts/postinstall.js"
+  },
+  "version": "0.12.6"
+}

@@ -1,0 +1,13 @@
+'context-menu':
+  '.ink.result': [
+    {label: 'Clear', command: 'inline-results:clear'}
+    {type: 'separator'}
+  ]
+  '.ink.docs': [
+    {label: 'Clear', command: 'inline-docs:clear'}
+    {type: 'separator'}
+  ]
+  'ink-terminal': [
+    {label: 'Copy', command: 'ink-terminal:copy'}
+    {label: 'Paste', command: 'ink-terminal:paste'}
+  ]

@@ -1,0 +1,1 @@
+{"source":".ink-plot-pane {\n  background-color: #282c34;\n  -webkit-user-select: none;\n}\n.ink-plot-pane .fill {\n  overflow: hidden;\n  height: 100%;\n  width: 100%;\n}\n.ink-plot-pane.is-resizing {\n  pointer-events: none;\n}\n"}

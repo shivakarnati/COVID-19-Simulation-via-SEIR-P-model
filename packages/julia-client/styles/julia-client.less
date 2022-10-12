@@ -1,0 +1,229 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+@import "syntax-variables";
+
+.julia {
+  table {
+    td {
+      padding-left: 5px;
+    }
+  }
+  .fade, &.fade, &.fade a {
+    color: @text-color-subtle;
+  }
+  &.error, .error {
+    color: @text-color-error;
+    a {
+      color: @text-color-error;
+    }
+
+    .body {
+      color: @text-color-error;
+      .error-description {
+        color: @syntax-text-color;
+      }
+      span [style="color:#FFF"] {
+        color: @syntax-text-color!important;
+      }
+    }
+  }
+}
+
+atom-text-editor.editor {
+  .syntax--keyword.syntax--end {
+    opacity: 0.5;
+  }
+}
+
+.error-trace {
+  .dark {
+    opacity: 0.6;
+  }
+  .medium {
+    opacity: 0.8;
+  }
+}
+
+.markdown {
+  .admonition {
+    margin: 1em 0;
+    .admonition-title {
+      margin: 0;
+      padding: 1em 1em .5em 1em;
+      font-weight: bold;
+
+      &:before {
+        margin-right: 0.5em;
+      }
+    }
+    >.markdown {
+      padding: 1em 0 0.5em 1em;
+    }
+
+    .admonition-title {
+      background-color: mix(@background-color-info, @syntax-background-color, 15%);
+    }
+    .markdown {
+      background-color: mix(@background-color-info, @syntax-background-color, 10%);
+    }
+
+    &.warning {
+      .admonition-title {
+        background-color: mix(@background-color-warning, @syntax-background-color, 15%);
+      }
+      .markdown {
+        background-color: mix(@background-color-warning, @syntax-background-color, 10%);
+      }
+    }
+
+    &.danger {
+      .admonition-title {
+        background-color: mix(@background-color-error, @syntax-background-color, 15%);
+      }
+      .markdown {
+        background-color: mix(@background-color-error, @syntax-background-color, 10%);
+      }
+    }
+
+    &.tip {
+      .admonition-title {
+        background-color: mix(@background-color-success, @syntax-background-color, 15%);
+      }
+      .markdown {
+        background-color: mix(@background-color-success, @syntax-background-color, 10%);
+      }
+    }
+
+    &.compat {
+      .admonition-title {
+        background-color: mix(@background-color-info, @syntax-selection-color, 20%);
+      }
+      .markdown {
+        background-color: mix(@background-color-info, @syntax-selection-color, 15%);
+      }
+    }
+
+    .title {
+      font-weight: bold;
+    }
+  }
+}
+
+.julia-client-selector {
+  .two-lines {
+    padding: 0.25em 1em  !important;
+    .primary-line, .secondary-line {
+      line-height: 1.8em;
+    }
+  }
+  .error-message {
+    color: @text-color-error;
+  }
+  .character-match {
+    font-weight: bold;
+  }
+}
+
+.julia-syntax-color-selector {
+  color: @syntax-text-color;
+  background-color: @syntax-background-color;
+  opacity: 0;
+}
+
+.ink-canopy.julia-profile {
+  .node {
+    &.dynamic-dispatch > div {
+      border: solid fade(@background-color-warning, 20%) 1px;
+      background: fade(@background-color-warning, 10%);
+      &:hover {
+        background: fade(@background-color-warning, 20%);
+      }
+    }
+    &.garbage-collection > div {
+      border: solid fade(@background-color-error, 20%) 1px;
+      background: fade(@background-color-error, 10%);
+      &:hover {
+        background: fade(@background-color-error, 20%);
+      }
+    }
+  }
+}
+
+.ink-profile-line {
+  &.dynamic-dispatch {
+    background: fade(@background-color-warning, 20%)!important;
+  }
+  &.garbage-collection {
+    background: fade(@background-color-error, 20%)!important;
+  }
+}
+
+atom-text-editor.editor[data-grammar$="source julia"],
+atom-text-editor.editor[data-grammar$="source weave md"],
+atom-text-editor.editor[data-grammar$="source weave latex"] {
+  autocomplete-suggestion-list.select-list.popover-list {
+    .suggestion-description {
+      line-height: 1;
+      .suggestion-description-content {
+        overflow-y : hidden;
+        display    : inline;
+        white-space: normal; // can be useful to workaround https://github.com/atom/autocomplete-plus/issues/868
+      }
+    }
+  }
+}
+
+/* Hack datatip component style (overwrite user's global style) */
+// atom-ide-ui
+.datatip-marked {
+  max-width: 500px;
+}
+.datatip-marked-text-editor-container {
+  padding-left: @component-padding;
+}
+// atom-ide-datatip
+.datatip-marked-container {
+  // @NOTE: This is only needed for atom-ide-datatip package and might be able to be removed in the future
+  font-family: @font-family;
+  max-width: 500px;
+}
+
+.line-number.julia-current-cell {
+  background-image:  linear-gradient(to right, rgba(255,255,0,0), 90%, fade(@syntax-text-color, 10%));
+}
+
+.julia-cell-border {
+  border-top: solid fade(@syntax-text-color, 80%) 1px;
+  margin-top: -1px;
+}
+
+.ink-debug-toolbar {
+  --color: @text-color;
+  --color-subtle: @text-color-subtle;
+  --color-highlight: @text-color-error;
+
+  button {
+    &.custom-svg-icon {
+      display: flex;
+      align-items: center;
+      height: 2.5em!important;
+
+      svg {
+        height: 1.6em;
+        margin: auto;
+      }
+    }
+  }
+}
+
+.terminal-link-tooltip {
+  z-index: 100;
+  color: @text-color;
+  background-color: @app-background-color;
+  padding: 0.2em 0.5em;
+  position: absolute;
+  border: 1px solid fade(@text-color, 70%);
+}

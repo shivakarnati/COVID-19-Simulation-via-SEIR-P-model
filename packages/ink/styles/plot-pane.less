@@ -1,0 +1,16 @@
+@import "syntax-variables";
+
+.ink-plot-pane {
+  background-color: @syntax-background-color;
+  -webkit-user-select: none;
+
+  .fill {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+  }
+
+  &.is-resizing {
+    pointer-events: none;
+  }
+}

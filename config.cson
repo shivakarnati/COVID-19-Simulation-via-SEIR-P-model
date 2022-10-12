@@ -1,0 +1,24 @@
+"*":
+  "autocomplete-plus":
+    confirmCompletion: "tab always, enter when suggestion explicitly selected"
+  core:
+    projectHome: "/usr/bin/julia"
+    versionPinnedPackages: [
+      "/usr/bin/julia"
+    ]
+  editor:
+    fontSize: 16
+    scrollPastEnd: true
+  "exception-reporting":
+    userId: "bdcabbaf-8beb-4bf1-b179-f757311664b4"
+  "julia-client":
+    currentVersion: "0.12.6"
+    firstBoot: false
+    juliaPath: "/home/shivakrishnakarnati/Downloads/julia-1.8.0/bin/julia"
+    uiOptions:
+      enableMenu: true
+      enableToolBar: true
+  "tool-bar":
+    position: "Left"
+  "uber-juno":
+    disable: true

@@ -1,0 +1,6 @@
+{
+  "atom-text-editor": {
+    "f5": "Julia run: run-f5",
+    "f6": "Julia run: run-f6"
+  }
+}

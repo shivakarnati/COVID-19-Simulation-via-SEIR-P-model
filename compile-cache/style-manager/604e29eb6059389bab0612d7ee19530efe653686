@@ -1,0 +1,1 @@
+{"source":".ink-toolbar {\n  display: flex;\n  flex-direction: column;\n  width: 100%;\n  height: 100%;\n}\n.ink-toolbar > .bar {\n  background: #21252b;\n  border-bottom: 1px solid #181a1f;\n  overflow: hidden;\n  white-space: nowrap;\n  padding: 2px;\n  flex-shrink: 0;\n}\n.ink-toolbar > .bar .inline-block {\n  margin-right: 5px;\n}\n"}

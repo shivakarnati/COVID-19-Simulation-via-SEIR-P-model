@@ -1,0 +1,1 @@
+{"source":".fade {\n  color: rgba(157, 165, 180, 0.6);\n}\n.notepane {\n  overflow: auto;\n  font-size: var(--editor-font-size);\n  padding: 1em;\n}\n.notepane img {\n  max-height: 20em;\n  display: block;\n}\n"}
