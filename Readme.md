@@ -89,3 +89,5 @@ println(pathogens_Reproduction)
 | Given model  | Implemented model |
 | ------------- | ------------- |
 |   2.0  | 0.56  |
+
+![Plot1]()
