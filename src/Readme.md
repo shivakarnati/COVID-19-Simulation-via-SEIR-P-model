@@ -1,4 +1,4 @@
-## A report on the Research Article titled ” SEIR model for COVID-19 dynamics incorporating the environment and social distancing
+## A report on the Research Article titled "SEIR model for COVID-19 dynamics incorporating the environment and social distancing"
 
 We would like to present this file to have an overview about our research article.
 
